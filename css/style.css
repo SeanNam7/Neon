@@ -8,10 +8,15 @@
     width: 100%;
 }
 
+body {
+    background-image: url("../img/brickwall.jpg");
+    background-size: cover;
+}
+
 .font {
     color: #F0FFFF;
     text-align: center;
-    height: 900px;
+    height: 500px;
 }
 
 .vertical-align {
@@ -20,10 +25,6 @@
     transform: translateY(10%);
 }
 
-body {
-    background-image: url("../img/brickwall.jpg");
-    background-size: cover;
-}
 
 #userText{
     background:none;
@@ -36,7 +37,7 @@ body {
     margin: 0 auto 0px;
     padding: 10px;
     text-align: center;
-    width: 300px;
+    width: 350px;
     outline: none;
 }
 
