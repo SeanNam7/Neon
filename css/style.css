@@ -25,6 +25,20 @@ body {
     background-size: cover;
 }
 
+#userText{
+    background:none;
+    border:none;
+    border-bottom:1px solid #aaa;
+    color: #777777;
+    display: block;
+    font-family: 'Open Sans Condensed',sans-serif;
+    font-size: 26px;
+    margin: 0 auto 0px;
+    padding: 10px;
+    text-align: center;
+    width: 300px;
+    outline: none;
+}
 
 /*Neon*/
 p {
