@@ -5,8 +5,132 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello World!</title>
-    <link rel="stylesheet" href="css/style.css">
   </head>
+  <style>
+  @import "https://fonts.googleapis.com/css?family=Warnes";
+
+* {
+    font-family: "Warnes", cursive;
+}
+
+.container {
+    width: 100%;
+}
+
+.font {
+    color: #F0FFFF;
+    text-align: center;
+    height: 900px;
+}
+
+.vertical-align {
+    position: relative;
+    top: 20%;
+    transform: translateY(10%);
+}
+
+body {
+    background-image: url("../img/brickwall.jpg");
+    background-size: cover;
+}
+
+#userText{
+    background:none;
+    border:none;
+    border-bottom:1px solid #aaa;
+    color: #777777;
+    display: block;
+    font-family: 'Open Sans Condensed',sans-serif;
+    font-size: 26px;
+    margin: 0 auto 0px;
+    padding: 10px;
+    text-align: center;
+    width: 300px;
+    outline: none;
+}
+
+/*Neon*/
+p {
+    text-align: center;
+    font-size: 7em;
+    margin: 20px 0 20px 0;
+}
+
+a {
+    text-decoration: none;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+p:nth-child(1) a {
+    color: #fff;
+    font-family: Warnes;
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+p:nth-child(1) a:hover {
+    color: #FF1177;
+    -webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
+}
+
+p a:hover {
+    color: #ffffff;
+}
+/*glow for webkit*/
+
+@-webkit-keyframes neon1 {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+    }
+
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+    };
+}
+
+
+/*glow for mozilla*/
+
+@-moz-keyframes neon1 {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+    }
+
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+    };
+}
+
+
+/*glow*/
+
+@keyframes neon1 {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+    }
+
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+    };
+}
+
+/*RESPONSIVE*/
+
+@media (max-width: 650px) {
+    #container {
+        width: 100%;
+    }
+
+    p {
+        font-size: 3.5em;
+    };
+}
+  </style>
 <body>
     <div class="container">
         <div class="font">
