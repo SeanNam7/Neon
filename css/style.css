@@ -16,7 +16,7 @@ body {
 .font {
     color: #F0FFFF;
     text-align: center;
-    height: 500px;
+    height: 60vh;
 }
 
 .vertical-align {
@@ -121,4 +121,14 @@ p a:hover {
     p {
         font-size: 3.5em;
     };
+
+    .font {
+        height: 300px;
+    }
+}
+
+@media (max-width: 415px) {
+    #userText {
+        width: 300px;
+    }
 }
