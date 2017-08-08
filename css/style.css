@@ -112,6 +112,11 @@ p a:hover {
 }
 
 /*RESPONSIVE*/
+@media (max-width: 770px) {
+    body {
+        background-image: url("../img/brickwalltablet.jpg");
+        background-size: cover;
+    }
 
 @media (max-width: 650px) {
     #container {
