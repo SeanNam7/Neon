@@ -10,6 +10,7 @@
 
 body {
     background-image: url("../img/brickwall1.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -135,5 +136,9 @@ p a:hover {
 @media (max-width: 415px) {
     #userText {
         width: 300px;
+    }
+
+    body {
+        background-image: url("../img/brickwallcell.jpg");
     }
 }
