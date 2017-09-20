@@ -8,10 +8,11 @@
     width: 100%;
 }
 
-body {
+html {
     background-image: url("../img/brickwall1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
 }
 
 .font {
@@ -114,16 +115,11 @@ p a:hover {
 
 /*RESPONSIVE*/
 @media (max-width: 770px) {
-    body {
+    html {
         background-image: url("../img/brickwalltablet.jpg");
-        background-size: cover;
     }
 
 @media (max-width: 650px) {
-    #container {
-        width: 100%;
-    }
-
     p {
         font-size: 3.5em;
     };
@@ -138,7 +134,7 @@ p a:hover {
         width: 300px;
     }
 
-    body {
+    html {
         background-image: url("../img/brickwallcell.jpg");
     }
 }
